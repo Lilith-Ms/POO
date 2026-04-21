@@ -126,3 +126,33 @@ print(f"color: {mi_avion.color}")
 mi_avion.mostrar_info()
 mi_avion.despegar()
 mi_avion.aterrizar()
+
+#Clase 3
+class Moto:
+    def __init__(self,marca,cilindraje,color):
+        self.marca = marca
+        self.cilindraje = cilindraje
+        self.color = color
+
+    # Métodos
+    def mostrar_info(self):
+        print(f"marca: {self.marca}")
+        print(f"cilindraje: {self.cilindraje}")
+        print(f"color: {self.color}")
+
+    def encender(self):
+        print(f"La moto {self.marca} está encendida")
+
+    def acelerar(self):
+        print(f"La moto {self.marca} está acelerando")
+
+
+#Prueba
+mi_moto = Moto("Yamaha","150cc","Negra")
+print(f"marca: {mi_moto.marca}")
+print(f"cilindraje: {mi_moto.cilindraje}")
+print(f"color: {mi_moto.color}")
+
+mi_moto.mostrar_info()
+mi_moto.encender()
+mi_moto.acelerar()
