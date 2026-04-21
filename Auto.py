@@ -96,3 +96,33 @@ print(f"color: {mi_gato.color}")
 mi_gato.mostrar_info()
 mi_gato.maullar()
 mi_gato.dormir()
+
+#Clase 2
+class Avion:
+    def __init__(self,modelo,capacidad,color):
+        self.modelo = modelo
+        self.capacidad = capacidad
+        self.color = color
+
+    # Métodos
+    def mostrar_info(self):
+        print(f"modelo: {self.modelo}")
+        print(f"capacidad: {self.capacidad}")
+        print(f"color: {self.color}")
+
+    def despegar(self):
+        print(f"El avión {self.modelo} está despegando")
+
+    def aterrizar(self):
+        print(f"El avión {self.modelo} está aterrizando")
+
+
+#Prueba
+mi_avion = Avion("Boeing 747",400,"Rojo")
+print(f"modelo: {mi_avion.modelo}")
+print(f"capacidad: {mi_avion.capacidad}")
+print(f"color: {mi_avion.color}")
+
+mi_avion.mostrar_info()
+mi_avion.despegar()
+mi_avion.aterrizar()
