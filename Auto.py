@@ -66,3 +66,33 @@ celular3 = Celular ( "Z Flip","5000Mhz","Android 15")
 
 print (f"SistemaOperativo: { celular3.SistemaOperativo}")
 
+# Ejercicios Propios Tarea
+#Clase 1
+class Gato:
+    def __init__(self,nombre,edad,color):
+        self.nombre = nombre
+        self.edad = edad
+        self.color = color
+
+    # Métodos
+    def mostrar_info(self):
+        print(f"nombre: {self.nombre}")
+        print(f"edad: {self.edad}")
+        print(f"color: {self.color}")
+
+    def maullar(self):
+        print(f"{self.nombre} dice: Miau")
+
+    def dormir(self):
+        print(f"{self.nombre} está durmiendo")
+
+
+#Prueba
+mi_gato = Gato("Michi",2,"Gris")
+print(f"nombre: {mi_gato.nombre}")
+print(f"edad: {mi_gato.edad}")
+print(f"color: {mi_gato.color}")
+
+mi_gato.mostrar_info()
+mi_gato.maullar()
+mi_gato.dormir()
